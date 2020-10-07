@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Question2</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    *
+    {
+      padding: 0px;
+      margin: 0px;
+
+    }
+    .completedivision
+    {
+      padding-top: 5%;
+            margin-top: 5%;
+            height: 100%;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: rgb(185, 152, 236);
+            padding-bottom: 10%;
+    }
+    .table{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 0.5%;
+    }
+
+        th,td{
+            height: 100%;
+            text-align: center;
+            padding: 0.5%;
+             }
+             .inputdiv{
+               text-align:left ;
+             }
+             .search{
+               text-align: right;
+             }
+  </style>
+</head>
+<body>
+  <div class="completedivision">
+    <div class="inputdiv">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Name of Bus:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" class="name" id="nameid" placeholder="Name of bus"><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Source of Bus:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" class="source" id="sourceid" placeholder="From"><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Destination of Bus:&nbsp;&nbsp;&nbsp;
+      <input type="text" class="dest" id="destid" placeholder="To"><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Number of Bus:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" class="num" id="numid" placeholder="Num of bus"><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Passanger_Capacity of Bus:&nbsp;&nbsp;&nbsp;
+      <input type="number" class="pass_cap" id="pass_capid" placeholder="Passanger_Capacity of bus"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <button style="background-color: rgb(255, 255, 255);" onclick="addbus(event)" >Submit</button>
+    </div>
+    <div class="search">
+      <input id="inputfield" type="text" placeholder="Enter Text">
+      <button onclick="search()">Search </button>
+    </div>
+    <table class="table" border="1" cellspacing=0>
+      <thead>
+        <tr>
+          <th>Serial_num</th>
+          <th>Name</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Number</th>
+          <th>Passenger_Capacity</th>
+        </tr>
+      </thead>
+      <tbody class="tdata" id="tdata"></tbody>
+    </table>
+  </div>
+  <script src='Question2.js'></script>
+</body>
+</html>
+
+
+
+<!-- 
+<html>
+  <head>
+  <title>Demo2</title>
+  <style>
+      *{
+          margin: 0px;
+          padding: 0px;
+      }
+      .active{
+          
+          margin-left: 30%;
+          
+          background-color:navajowhite;
+          height:500px;
+          width: 550px;
+  
+   }
+   .ins{
+       margin-left: 10%;
+       margin-top: 15px;
+       width: 80%;
+       height: 40%;
+   }
+   .table{
+       width:80%;
+       margin-left: 5%;
+       
+       height:100%;
+       border-color:floralwhite;
+   }
+   th,td{
+      height: 100%;
+      text-align: center;
+      padding:0.5%;
+   }
+   input{
+       font-size: 12;
+       border-color:  black;
+       text-align: center;
+       height: 40px; 
+       border-radius: 20px;
+       padding: 0.7%;
+       width: 100px;
+       margin-top: 10px;
+      margin-right: 6px;
+   }
+   .search{
+       margin-bottom: 10px;
+       margin-left: 10%;
+       margin-top: 25px;
+   }
+   button{
+       padding: 10px;
+       height: 40px;
+       border-color: black;
+       margin-left: 30%;
+       background-color:skyblue;
+   }
+   h2{
+       margin-top: 4%;
+       margin-left: 30%;
+   }
+   .del{
+       height: 40px;
+       width: 100%;
+   }
+  </style>
+  </head>
+  <body>
+      <center><h1>Bus Management System</h1></center>
+      <div class="active">
+          <h2><u>Details of Bus</u></h2>
+          <div class="ins">
+
+              <form onsubmit="insert(event)">
+                  <input type="text" required placeholder="Bus Name" id="bname"/>
+                  <input type="text" required placeholder="Source Name" id="sname"/>
+                  <input type="text" required placeholder="Destination" id="dest"/><br>
+                  <input type="number" required placeholder="Bus Number" id="no"/>
+                  <input type="number" required placeholder="Capacity" id="cpcty"/><br><br>
+               <button class="submit" required>Add bus</button>
+            </form> 
+           </div>
+           <div class="search">
+              <input type="text" placeholder="search here" onkeyup="search()" id="searching">
+           </div>
+                  <table border="1" class="table" cellspacing="1">  
+                      <thead>
+                          <tr>
+                              <th>Sr No</th>
+                              <th>Bus Name</th>
+                              <th>Source Name</th>
+                              <th>Destination</th>
+                              <th>Bus Number</th>
+                              <th>Passenger Capacity</th>
+                          </tr>
+                          </thead>
+                          <tbody class="tdata"></tbody>
+                      </table>
+              </div>
+          <script src="Question2.js"></script>
+  </body>
+</html> -->
